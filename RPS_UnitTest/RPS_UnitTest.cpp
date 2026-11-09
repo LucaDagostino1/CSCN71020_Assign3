@@ -18,5 +18,13 @@ namespace RPSUnitTest
 
             Assert::AreEqual("Player1", result);
         }
+        TEST_METHOD(RockLosesToPaper)
+        {
+            char result[10];
+
+            getWinner("Rock", "Paper", result);
+
+            Assert::AreEqual("Player2", result);
+        }
     };
 }
