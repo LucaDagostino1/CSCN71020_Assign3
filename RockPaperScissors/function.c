@@ -1,0 +1,15 @@
+#include <string.h>
+#include "function.h"
+
+void getWinner(char player1[], char player2[], char result[])
+{
+    if (strcmp(player1, "Rock") == 0 &&
+        strcmp(player2, "Scissors") == 0)
+    {
+        strcpy_s(result, 10, "Player1");
+    }
+    else
+    {
+        strcpy_s(result, 10, "Invalid");    
+    }
+}
